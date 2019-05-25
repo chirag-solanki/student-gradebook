@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+}
+
+#mainPageTable {
+    text-align: center;
+    background: #6493fc;
+    height: 165px;
+    width: 300px;
+    border-radius: 25px;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+#main {
+    background-image: url("https://wallpapercave.com/wp/tmx6W6N.png");
+}
+
+#button1 {
+    background-color: #ffbccd;
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#button2 {
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+td { 
+    padding: 5px;
+}
+
+#studentGrade {
+	display: table;
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: gray;
+}
+

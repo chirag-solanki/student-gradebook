@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<title>GradeBook System</title>
+</head>
+<body id="main">
+	<br><h1 style="text-align: center">GradeBook System</h1><hr><br><br>
+	
+	<table id="mainPageTable" align="center">
+		<tr>
+			<td>
+				<form method="post" action="InsertRedirectController">
+					<br><input id="button1" type="submit" value="Create New GradeBook">
+                </form>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form method="post" action="RetrieveGradeBookController">
+					<br><input id="button2" type="submit" value="View GradeBook">
+                </form>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>

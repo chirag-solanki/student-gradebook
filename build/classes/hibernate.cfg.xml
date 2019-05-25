@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/assignment2_Chirag</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">1111</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        
+        
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hbm2ddl.auto">update</property>
+        
+        <!-- Mention here all the model classes along with their package name -->
+		<mapping class="ca.sheridancollege.models.CreateGradeBookBean"/>
+		<mapping class="ca.sheridancollege.models.CreateGradeItemBean"/>
+		<mapping class="ca.sheridancollege.models.GradeBookModel"/>
+		<mapping class="ca.sheridancollege.models.GradeItemModel"/>
+		<mapping class="ca.sheridancollege.models.HibernateUtility"/>
+		<mapping class="ca.sheridancollege.models.RetrieveGradeBookDAO"/>
+		<mapping class="ca.sheridancollege.models.RetrieveGradeItemDAO"/>
+		<mapping class="ca.sheridancollege.models.SaveGradeBookDAO"/>
+		
+    </session-factory>
+</hibernate-configuration>
